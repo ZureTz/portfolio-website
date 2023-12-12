@@ -1,36 +1,54 @@
+body {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+}
+
 /* Navigation bar */
 .top-navigation-bar {
   border: 1px solid rgba(1, 0, 0, 0.2);
-  background-color: aliceblue;
-  overflow: hidden;
+  background-color: rgba(1, 24, 68, 1);
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  left: 0%;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-/* Left side bar to store the icon */
-.left-side-bar {
-  margin-top: 0.5%;
+.middle-nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* div logo */
+.logo {
+  margin-top: auto;
   display: flex;
   align-items: center;
   justify-content: left;
 }
 
-.left-side-bar a img {
+.toggle-button {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.logo a img,
+.toggle-button img {
   height: 40px;
   width: auto;
   max-width: 500px;
 }
 
-/* A seperator */
-.navigation-seperator {
-  width: 50%;
-}
-
 /* Right side bar to store navigation buttons */
 /* Add a black background color to the top navigation bar */
 .right-side-bar {
-  margin-right: 5%;
+  list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,12 +56,16 @@
 
 /* Style the links inside the navigation bar */
 .right-side-bar a {
-  color: black;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+
+  color: white;
   text-align: mid;
-  text-decoration: underline 0.13em rgba(255, 255, 255, 0);
+  text-decoration: underline 0.1em rgba(255, 255, 255, 0);
   padding: 14px 12px;
   font-size: 17px;
-  transition: all 0.2s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 /* Change the color of links on hover */
@@ -51,26 +73,26 @@
   background-color: rgba(33, 127, 177, 0.4);
   color: white;
   text-decoration-color: rgba(255, 255, 255, 1);
-  transition: all 0.2s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 /* Add a color to the active/current link */
 .right-side-bar a.active {
   background-color: rgba(33, 127, 177, 0.95);
   color: white;
+  text-decoration-color: rgba(255, 255, 255, 1);
 
-  transition: all 0.2s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .right-side-bar a.active:hover {
   background-color: rgba(33, 127, 177, 1);
   color: white;
 
-  transition: all 0.2s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
-p {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+header.home {
+  background-image: url(/images/header.jpg) no-repeat center;
+  height: 200px;
 }
