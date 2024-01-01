@@ -1,4 +1,4 @@
-* {
+html {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
@@ -94,14 +94,14 @@ nav {
       }
     }
 
-    .toggle-button {
+    /* .toggle-button {
       display: flex;
       align-items: center;
       justify-content: right;
-    }
+    } */
 
-    .logo a img,
-    .toggle-button img {
+    .logo a img
+    /* ,.toggle-button img  */ {
       height: 40px;
       width: auto;
       max-width: 500px;
@@ -147,7 +147,68 @@ nav::after {
   text-align: center;
 }
 
-.designer .wrapper {
-  width: 90%;
-  margin: 0 auto;
+.banner + .main {
+  margin-top: 5px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  text-align: left;
+}
+
+.card {
+  margin: 40px;
+  width: 500px;
+  height: 300px;
+
+  img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+.content {
+  max-height: 200px;
+  overflow-y: scroll;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+.designer-and-artist {
+  display: flex;
+  justify-content: center;
+
+  ul {
+    width: 80%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    .avatar {
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+
+      .name {
+        font-weight: bold;
+      }
+      
+      .occupation {
+        font-size: smaller;
+        
+      }
+    }
+  }
 }
