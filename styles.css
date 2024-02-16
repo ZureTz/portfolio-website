@@ -21,7 +21,7 @@ body {
 
 /* Navigation bar */
 nav {
-  background-color: rgba(1, 24, 68, 1);
+  background: linear-gradient(to left, black 50%, white 50%);
   position: fixed;
   width: 100%;
   top: 0%;
@@ -33,6 +33,7 @@ nav {
 }
 
 .middle-nav {
+  background: linear-gradient(to left, black 10%, white);
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
@@ -46,6 +47,11 @@ nav {
   display: flex;
   align-items: center;
   justify-content: left;
+}
+.logo a img {
+  height: 40px;
+  width: auto;
+  max-width: 500px;
 }
 
 /* Right side bar to store navigation buttons */
@@ -74,7 +80,7 @@ nav {
 
 /* Change the color of links on hover */
 .right-side-bar a:hover {
-  background-color: rgba(33, 127, 177, 0.4);
+  background-color: rgba(97, 119, 135, 0.32);
   color: white;
   text-decoration-color: rgba(255, 255, 255, 1);
   transition: all 0.3s ease 0s;
@@ -82,7 +88,7 @@ nav {
 
 /* Add a color to the active/current link */
 .right-side-bar a.active {
-  background-color: rgba(33, 127, 177, 0.95);
+  background-color: rgba(97, 119, 135, 0.95);
   color: white;
   text-decoration-color: rgba(255, 255, 255, 1);
 
@@ -90,7 +96,7 @@ nav {
 }
 
 .right-side-bar a.active:hover {
-  background-color: rgba(33, 127, 177, 1);
+  background-color: rgba(97, 119, 135, 1);
   color: white;
 
   transition: all 0.3s ease 0s;
@@ -101,13 +107,6 @@ nav {
   align-items: center;
   justify-content: right;
 } */
-
-.logo a img
-/* ,.toggle-button img  */ {
-  height: 40px;
-  width: auto;
-  max-width: 500px;
-}
 
 nav::before {
   content: "";
@@ -121,8 +120,11 @@ nav::after {
 } */
 
 .banner {
-  background-image: linear-gradient(rgba(1, 24, 68, 0.5), rgba(1, 24, 68, 0.5)),
-    url(/images/banner.jpg);
+  background-image: linear-gradient(
+      rgba(39, 46, 59, 0.5),
+      rgba(39, 46, 59, 0.5)
+    ),
+    url(/images/background.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -131,13 +133,14 @@ nav::after {
   left: 0;
   box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.8);
 }
-.banner .box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  font-size: 80px;
-  color: wheat;
+
+.intro header {
+  font-size: 40px;
+}
+.intro .content {
+  font-size: 50px;
+  text-align: left;
+  margin: 5%;
 }
 
 .main {
@@ -171,7 +174,7 @@ nav::after {
   object-fit: cover;
 }
 
-.content {
+.card .content {
   max-height: 200px;
   overflow-y: scroll;
   /* Hide scrollbar for IE, Edge and Firefox */
@@ -184,7 +187,7 @@ nav::after {
   display: none;
 }
 
-.designer-and-artist {
+/* .designer-and-artist {
   display: flex;
   justify-content: center;
 }
@@ -208,4 +211,26 @@ nav::after {
   font-size: smaller;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
+} */
+
+.entry {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.entry a {
+  text-decoration: none;
+  background-color: gray;
+
+}
+.entry header h2 {
+  color: white;
+  margin: 15px;
+}
+
+.bottom-seperator {
+  width : 100vw;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: 50px;
 }
