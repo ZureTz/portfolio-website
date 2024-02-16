@@ -206,4 +206,6 @@ nav::after {
 }
 .avatar .occupation {
   font-size: smaller;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
